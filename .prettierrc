@@ -3,7 +3,7 @@
   "singleQuote": true,
 
   "arrowParens": "avoid",
-  "printWidth": 100,
+  "printWidth": 80,
   "proseWrap": "never",
   "htmlWhitespaceSensitivity": "ignore",
   "endOfLine": "auto",
