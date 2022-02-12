@@ -2,11 +2,12 @@
   "private": true,
   "scripts": {
     "start": "umi dev",
-    "build": "umi build",
+    "build": "cross-env UMI_ENV=prod umi build",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "socket": "node ./msw/socketServer/index.mjs"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -28,11 +29,20 @@
   "devDependencies": {
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/ws": "^8.2.2",
+    "@umijs/plugin-esbuild": "^1.4.1",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.5.20",
+    "cross-env": "^7.0.3",
     "lint-staged": "^10.0.7",
+    "mockjs": "^1.1.0",
+    "msw": "^0.36.8",
     "prettier": "^2.2.0",
     "typescript": "^4.1.2",
+    "ws": "^8.5.0",
     "yorkie": "^2.0.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
