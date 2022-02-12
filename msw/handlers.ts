@@ -17,7 +17,7 @@ const urlReg = (path: string) => {
   return new RegExp(`\/api${path}`)
 }
 
-export const getCoin = rest.get(urlReg('/coin/list'), (req, res, ctx) => {
+export const getTags = rest.get(urlReg('/tag/list'), (req, res, ctx) => {
   return res(
     ctx.json(
       Mocker({

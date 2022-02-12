@@ -36,7 +36,7 @@ export default defineConfig({
 `配置MSW MOCK数据: msw/handlers.ts 中进行配置`
 
 ```js
-export const getCoin = rest.get(urlReg('/coin/list'), (req, res, ctx) => {
+export const getTags = rest.get(urlReg('/tag/list'), (req, res, ctx) => {
   return res(
     ctx.json(
       Mocker({
@@ -60,7 +60,7 @@ MSW_MOCK:
 - 1: 全部开启 -> handlers.ts 配置的接口拦截都会生效
 - 2: 部分开启 -> 需在接口 url 上添加 \_\_mock 表示
   ```js
-    export function getCoin() {
+    export function getTags() {
       return http.get<any, CoinItem[]>('/list?__mock');
     }
   ```
