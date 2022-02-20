@@ -1585,6 +1585,18 @@
   dependencies:
     "@umijs/deps" "3.5.20"
 
+"@vue/reactivity@^3.2.31":
+  version "3.2.31"
+  resolved "https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.2.31.tgz#fc90aa2cdf695418b79e534783aca90d63a46bbd"
+  integrity sha512-HVr0l211gbhpEKYr2hYe7hRsV91uIVGFYNHj73njbARVGHQvIojkImKMaZNDdoDZOIkMsBc9a1sMqR+WZwfSCw==
+  dependencies:
+    "@vue/shared" "3.2.31"
+
+"@vue/shared@3.2.31":
+  version "3.2.31"
+  resolved "https://registry.npmmirror.com/@vue/shared/-/shared-3.2.31.tgz#c90de7126d833dcd3a4c7534d534be2fb41faa4e"
+  integrity sha512-ymN2pj6zEjiKJZbrf98UM2pfDd6F2H7ksKw7NDt/ZZ1fh5Ei39X5tABugtT03ZRlWd9imccoK0hE8hpjpU7irQ==
+
 "@xmldom/xmldom@^0.7.2":
   version "0.7.5"
   resolved "https://registry.npmmirror.com/@xmldom/xmldom/-/xmldom-0.7.5.tgz#09fa51e356d07d0be200642b0e4f91d8e6dd408d"

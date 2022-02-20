@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
+    "@vue/reactivity": "^3.2.31",
     "axios": "^0.25.0",
     "dayjs": "^1.10.7",
     "react": "17.x",
