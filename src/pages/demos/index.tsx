@@ -10,6 +10,7 @@ export default function Demos() {
       <Space direction="vertical">
         <Link to="/demos/mock/api">Mock Api</Link>
         <Link to="/demos/mock/socket">Socket Api</Link>
+        <Link to="/demos/reactive">React + @vue/reactivity</Link>
       </Space>
     </Card>
   )
